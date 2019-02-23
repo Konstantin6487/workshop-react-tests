@@ -57,8 +57,11 @@
     "webpack-dev-server": "^3.2.0"
   },
   "dependencies": {
+    "lodash": "^4.17.11",
+    "random-words": "^1.1.0",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
+    "react-log-state": "^0.1.0",
     "react-tabs": "^3.0.0"
   }
 }
