@@ -8,7 +8,7 @@ import {
 } from 'react-tabs';
 
 const CustomTab = ({ children }) => (
-  <Tab>
+  <Tab data-test="tab-anchor">
     <h1>{children}</h1>
   </Tab>
 );
@@ -17,7 +17,7 @@ CustomTab.tabsRole = 'Tab'; // Required field to use your custom Tab
 
 const CustomTabComponent = () => (
   <Tabs>
-    <TabList>
+    <TabList data-test="tabs-container">
       <CustomTab>Custom Tab 1</CustomTab>
       <CustomTab>Custom Tab 2</CustomTab>
     </TabList>

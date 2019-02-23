@@ -8,9 +8,9 @@ import {
 
 const BasicComponent = () => (
   <Tabs>
-    <TabList>
-      <Tab>Title 1</Tab>
-      <Tab>Title 2</Tab>
+    <TabList data-test="tabs-container">
+      <Tab data-test="tab-anchor">Title 1</Tab>
+      <Tab data-test="tab-anchor">Title 2</Tab>
     </TabList>
 
     <TabPanel>
