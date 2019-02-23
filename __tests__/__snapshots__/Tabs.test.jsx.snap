@@ -1,24 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`react-test-renderer <BasicComponent /> 1`] = `
+exports[`Component 1 1`] = `
 <div
-  className="react-tabs"
-  data-tabs={true}
-  onClick={[Function]}
-  onKeyDown={[Function]}
+  class="react-tabs"
+  data-tabs="true"
 >
   <ul
-    className="react-tabs__tab-list"
+    class="react-tabs__tab-list"
     role="tablist"
   >
     <li
       aria-controls="react-tabs-1"
       aria-disabled="false"
       aria-selected="true"
-      className="react-tabs__tab react-tabs__tab--selected"
+      class="react-tabs__tab react-tabs__tab--selected"
       id="react-tabs-0"
       role="tab"
-      tabIndex="0"
+      tabindex="0"
     >
       Title 1
     </li>
@@ -26,17 +24,16 @@ exports[`react-test-renderer <BasicComponent /> 1`] = `
       aria-controls="react-tabs-3"
       aria-disabled="false"
       aria-selected="false"
-      className="react-tabs__tab"
+      class="react-tabs__tab"
       id="react-tabs-2"
       role="tab"
-      tabIndex={null}
     >
       Title 2
     </li>
   </ul>
   <div
     aria-labelledby="react-tabs-0"
-    className="react-tabs__tab-panel react-tabs__tab-panel--selected"
+    class="react-tabs__tab-panel react-tabs__tab-panel--selected"
     id="react-tabs-1"
     role="tabpanel"
   >
@@ -46,32 +43,30 @@ exports[`react-test-renderer <BasicComponent /> 1`] = `
   </div>
   <div
     aria-labelledby="react-tabs-2"
-    className="react-tabs__tab-panel"
+    class="react-tabs__tab-panel"
     id="react-tabs-3"
     role="tabpanel"
   />
 </div>
 `;
 
-exports[`react-test-renderer <ControlledComponent /> 1`] = `
+exports[`Component 2 1`] = `
 <div
-  className="react-tabs"
-  data-tabs={true}
-  onClick={[Function]}
-  onKeyDown={[Function]}
+  class="react-tabs"
+  data-tabs="true"
 >
   <ul
-    className="react-tabs__tab-list"
+    class="react-tabs__tab-list"
     role="tablist"
   >
     <li
       aria-controls="react-tabs-5"
       aria-disabled="false"
       aria-selected="true"
-      className="react-tabs__tab react-tabs__tab--selected"
+      class="react-tabs__tab react-tabs__tab--selected"
       id="react-tabs-4"
       role="tab"
-      tabIndex="0"
+      tabindex="0"
     >
       Title 1
     </li>
@@ -79,61 +74,144 @@ exports[`react-test-renderer <ControlledComponent /> 1`] = `
       aria-controls="react-tabs-7"
       aria-disabled="false"
       aria-selected="false"
-      className="react-tabs__tab"
+      class="react-tabs__tab"
       id="react-tabs-6"
       role="tab"
-      tabIndex={null}
     >
       Title 2
     </li>
   </ul>
   <div
     aria-labelledby="react-tabs-4"
-    className="react-tabs__tab-panel react-tabs__tab-panel--selected"
+    class="react-tabs__tab-panel react-tabs__tab-panel--selected"
     id="react-tabs-5"
     role="tabpanel"
   />
   <div
     aria-labelledby="react-tabs-6"
-    className="react-tabs__tab-panel"
+    class="react-tabs__tab-panel"
     id="react-tabs-7"
     role="tabpanel"
   />
 </div>
 `;
 
-exports[`react-test-renderer <CustomTabComponent /> 1`] = `
+exports[`Component 2 2`] = `
 <div
-  className="react-tabs"
-  data-tabs={true}
-  onClick={[Function]}
-  onKeyDown={[Function]}
+  class="react-tabs"
+  data-tabs="true"
 >
   <ul
-    className="react-tabs__tab-list"
+    class="react-tabs__tab-list"
     role="tablist"
   >
     <li
-      aria-controls={null}
+      aria-controls="react-tabs-5"
+      aria-disabled="false"
+      aria-selected="true"
+      class="react-tabs__tab react-tabs__tab--selected"
+      id="react-tabs-4"
+      role="tab"
+      tabindex="0"
+    >
+      Title 1
+    </li>
+    <li
+      aria-controls="react-tabs-7"
       aria-disabled="false"
       aria-selected="false"
-      className="react-tabs__tab"
-      id={null}
+      class="react-tabs__tab"
+      id="react-tabs-6"
       role="tab"
-      tabIndex={null}
+    >
+      Title 2
+    </li>
+  </ul>
+  <div
+    aria-labelledby="react-tabs-4"
+    class="react-tabs__tab-panel react-tabs__tab-panel--selected"
+    id="react-tabs-5"
+    role="tabpanel"
+  />
+  <div
+    aria-labelledby="react-tabs-6"
+    class="react-tabs__tab-panel"
+    id="react-tabs-7"
+    role="tabpanel"
+  />
+</div>
+`;
+
+exports[`Component 2 3`] = `
+<div
+  class="react-tabs"
+  data-tabs="true"
+>
+  <ul
+    class="react-tabs__tab-list"
+    role="tablist"
+  >
+    <li
+      aria-controls="react-tabs-5"
+      aria-disabled="false"
+      aria-selected="false"
+      class="react-tabs__tab"
+      id="react-tabs-4"
+      role="tab"
+    >
+      Title 1
+    </li>
+    <li
+      aria-controls="react-tabs-7"
+      aria-disabled="false"
+      aria-selected="true"
+      class="react-tabs__tab react-tabs__tab--selected"
+      id="react-tabs-6"
+      role="tab"
+      tabindex="0"
+    >
+      Title 2
+    </li>
+  </ul>
+  <div
+    aria-labelledby="react-tabs-4"
+    class="react-tabs__tab-panel"
+    id="react-tabs-5"
+    role="tabpanel"
+  />
+  <div
+    aria-labelledby="react-tabs-6"
+    class="react-tabs__tab-panel react-tabs__tab-panel--selected"
+    id="react-tabs-7"
+    role="tabpanel"
+  />
+</div>
+`;
+
+exports[`Component 3 1`] = `
+<div
+  class="react-tabs"
+  data-tabs="true"
+>
+  <ul
+    class="react-tabs__tab-list"
+    role="tablist"
+  >
+    <li
+      aria-disabled="false"
+      aria-selected="false"
+      class="react-tabs__tab"
+      role="tab"
     >
       <h1>
         Custom Tab 1
       </h1>
     </li>
     <li
-      aria-controls={null}
       aria-disabled="false"
       aria-selected="false"
-      className="react-tabs__tab"
-      id={null}
+      class="react-tabs__tab"
       role="tab"
-      tabIndex={null}
     >
       <h1>
         Custom Tab 2
@@ -142,7 +220,7 @@ exports[`react-test-renderer <CustomTabComponent /> 1`] = `
   </ul>
   <div
     aria-labelledby="react-tabs-8"
-    className="react-tabs__tab-panel react-tabs__tab-panel--selected"
+    class="react-tabs__tab-panel react-tabs__tab-panel--selected"
     id="react-tabs-9"
     role="tabpanel"
   >
@@ -150,9 +228,103 @@ exports[`react-test-renderer <CustomTabComponent /> 1`] = `
   </div>
   <div
     aria-labelledby="react-tabs-10"
-    className="react-tabs__tab-panel"
+    class="react-tabs__tab-panel"
     id="react-tabs-11"
     role="tabpanel"
   />
+</div>
+`;
+
+exports[`Component 3 2`] = `
+<div
+  class="react-tabs"
+  data-tabs="true"
+>
+  <ul
+    class="react-tabs__tab-list"
+    role="tablist"
+  >
+    <li
+      aria-disabled="false"
+      aria-selected="false"
+      class="react-tabs__tab"
+      role="tab"
+    >
+      <h1>
+        Custom Tab 1
+      </h1>
+    </li>
+    <li
+      aria-disabled="false"
+      aria-selected="false"
+      class="react-tabs__tab"
+      role="tab"
+    >
+      <h1>
+        Custom Tab 2
+      </h1>
+    </li>
+  </ul>
+  <div
+    aria-labelledby="react-tabs-8"
+    class="react-tabs__tab-panel react-tabs__tab-panel--selected"
+    id="react-tabs-9"
+    role="tabpanel"
+  >
+    Panel 1
+  </div>
+  <div
+    aria-labelledby="react-tabs-10"
+    class="react-tabs__tab-panel"
+    id="react-tabs-11"
+    role="tabpanel"
+  />
+</div>
+`;
+
+exports[`Component 3 3`] = `
+<div
+  class="react-tabs"
+  data-tabs="true"
+>
+  <ul
+    class="react-tabs__tab-list"
+    role="tablist"
+  >
+    <li
+      aria-disabled="false"
+      aria-selected="false"
+      class="react-tabs__tab"
+      role="tab"
+    >
+      <h1>
+        Custom Tab 1
+      </h1>
+    </li>
+    <li
+      aria-disabled="false"
+      aria-selected="false"
+      class="react-tabs__tab"
+      role="tab"
+    >
+      <h1>
+        Custom Tab 2
+      </h1>
+    </li>
+  </ul>
+  <div
+    aria-labelledby="react-tabs-8"
+    class="react-tabs__tab-panel"
+    id="react-tabs-9"
+    role="tabpanel"
+  />
+  <div
+    aria-labelledby="react-tabs-10"
+    class="react-tabs__tab-panel react-tabs__tab-panel--selected"
+    id="react-tabs-11"
+    role="tabpanel"
+  >
+    Panel 2
+  </div>
 </div>
 `;
