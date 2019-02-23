@@ -67,6 +67,7 @@ export default class App extends Component {
           {' '}
           <input
             type="button"
+            data-test="tab-remove"
             style={{ border: 'none', background: 'inherit' }}
             value="x"
             onClick={this.removeTab.bind(null, id)}
