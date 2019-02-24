@@ -17,7 +17,7 @@ CustomTab.tabsRole = 'Tab'; // Required field to use your custom Tab
 
 const CustomTabComponent = () => (
   <Tabs>
-    <TabList data-test="tabs-container">
+    <TabList data-test="tabs-container-2">
       <CustomTab>Custom Tab 1</CustomTab>
       <CustomTab>Custom Tab 2</CustomTab>
     </TabList>

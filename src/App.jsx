@@ -21,6 +21,7 @@ import 'react-tabs/style/react-tabs.css';
 const initTabsData = [
   { id: 0, title: 'Title', content: 'Content 1' },
   { id: 1, title: 'Another title', content: 'Another content' },
+  { id: 2, title: 'New title', content: 'New content' },
 ];
 
 export default class App extends Component {
