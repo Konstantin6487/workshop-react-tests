@@ -7,7 +7,7 @@ import {
 } from 'lodash';
 import randomWords from 'random-words';
 import ReactLogState from 'react-log-state';
-
+import Cookies from 'js-cookie';
 import {
   Tab,
   TabPanel,
@@ -18,6 +18,8 @@ import CustomTabComponent from './CustomTabComponent';
 
 import 'react-tabs/style/react-tabs.css';
 
+ReactLogState.logAll();
+
 const initTabsData = [
   { id: 0, title: 'Title', content: 'Content 1' },
   { id: 1, title: 'Another title', content: 'Another content' },
@@ -27,6 +29,7 @@ const initTabsData = [
 export default class App extends Component {
   constructor(props) {
     super(props);
+    this.storage = props.storage || Cookies;
     this.state = { tabsData: initTabsData };
   }
 
@@ -54,6 +57,15 @@ export default class App extends Component {
     const { tabsData } = this.state;
     const updatedTabsData = tabsData.filter(({ id }) => id !== tabId);
     this.setState({ tabsData: updatedTabsData });
+  }
+
+  getStorageTabIndex = () => {
+    const activeTabIndex = this.storage.get('activeTab');
+    return activeTabIndex ? Number(activeTabIndex) : 0;
+  }
+
+  saveTabIndex = (tabIndex) => {
+    this.storage.set('activeTab', tabIndex);
   }
 
   renderTabsTitles = () => {
@@ -103,13 +115,13 @@ export default class App extends Component {
           text="add tab"
         />
         <BasicComponent
+          onSelect={this.saveTabIndex}
           renderTabsTitles={this.renderTabsTitles}
           renderTabsContent={this.renderTabsContent}
+          getStorageTabIndex={this.getStorageTabIndex}
         />
         <CustomTabComponent />
       </div>
     );
   }
 }
-
-ReactLogState.logAll();
